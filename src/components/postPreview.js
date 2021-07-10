@@ -1,7 +1,7 @@
 import React from 'react';
 import { css } from '@emotion/core';
 import { Link } from 'gatsby';
-// import ReadLink from '../components/read-link';
+import ReadLink from '../components/read-link';
 
 const PostPreview = ({ post }) => (
   <article
@@ -18,7 +18,7 @@ const PostPreview = ({ post }) => (
       <Link to={post.slug}>{post.title}</Link>
     </h3>
     <p>{post.excerpt}</p>
-    {/* <ReadLink to={post.slug}>read this post &rarr;</ReadLink> */}
+    <ReadLink to={post.slug}>read this post &rarr;</ReadLink>
   </article>
 );
 
